@@ -1,0 +1,16 @@
+services:
+  mysql:
+    image: 'mysql:latest'
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: player-db
+      MYSQL_USER: player
+      MYSQL_PASSWORD: player
+    ports:
+      - 3306:3306
+    networks:
+      - local
+networks:
+  local:
+    driver: bridge

@@ -1,6 +1,6 @@
 #Setup spring jpa datasource
 spring:
-  docker.compose.file: docker/compose.yml
+  docker.compose.file: docker/local/compose-local.yml
   datasource:
     url: "jdbc:mysql://localhost:3306/player-db"
     username: player

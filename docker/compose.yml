@@ -1,3 +1,4 @@
+name: prod
 services:
   mysql:
     image: 'mysql:latest'
@@ -8,5 +9,26 @@ services:
       MYSQL_USER: player
       MYSQL_PASSWORD: player
     ports:
-      - 3306:3306
-
+      - 3386:3306
+    networks:
+      - prod
+    healthcheck:
+      test: mysqladmin ping -h mysql -u $$MYSQL_USER --password=$$MYSQL_PASSWORD
+      start_period: 5s
+      interval: 5s
+      timeout: 5s
+      retries: 55
+  player-rest:
+    image: 'player-rest:latest'
+    build: ../rest
+    ports:
+      - 8888:8080
+    depends_on:
+      mysql:
+        condition: service_healthy
+        required: true
+    networks:
+      - prod
+networks:
+  prod:
+    driver: bridge
