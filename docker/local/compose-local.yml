@@ -9,8 +9,3 @@ services:
       MYSQL_PASSWORD: player
     ports:
       - 3306:3306
-    networks:
-      - local
-networks:
-  local:
-    driver: bridge

@@ -1,0 +1,18 @@
+#Setup spring jpa datasource
+spring:
+  docker.compose.file: docker/local/compose-local.yml
+  datasource:
+    url: "jdbc:mysql://localhost:3306/player-db"
+    username: player
+    password: player
+#    driver-class-name: com.mysql.jdbc.Driver #Spring said this is not necessary, and the driver class is deprecated
+
+#  jap.properties.hibernate:
+#    hbm2ddl.auto: validate #Enable auto DB schema creation? validate, create, update
+#    naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl #Tolerate the table and column namings like "tblUser" and "createAt"
+#    enable_lazy_load_no_trans: true #Start a new session for lazy mode, no need to worry the issue caused by previous hibernate session was closed
+
+  liquibase:
+    enabled: true
+    change-log: classpath:changelogTest/db.changelog-master.yaml
+
