@@ -2,18 +2,11 @@ package com.intuit.player.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.intuit.player.domain.PlayerEntity;
-import jakarta.persistence.Column;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 @Data
 @AllArgsConstructor

@@ -1,7 +1,6 @@
 package com.intuit.player.service;
 
 import com.intuit.player.dao.PlayerRepository;
-import com.intuit.player.domain.PlayerEntity;
 import com.intuit.player.dto.Player;
 import com.intuit.player.dto.PlayerList;
 import org.junit.jupiter.api.Assertions;
@@ -12,7 +11,6 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.annotation.Transient;
-import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.test.context.ActiveProfiles;
 
