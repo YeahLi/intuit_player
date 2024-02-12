@@ -1,0 +1,35 @@
+{
+  "players": [
+    {
+      "id": "aaronha01",
+      "birthYear": 1934,
+      "birthMonth": 2,
+      "birthDay": 5,
+      "birthCountry": "USA",
+      "birthState": "AL",
+      "birthCity": "Mobile",
+      "deathYear": null,
+      "deathMonth": null,
+      "deathDay": null,
+      "deathCounty": "",
+      "deathState": "",
+      "deathCity": "",
+      "nameFirst": "Hank",
+      "nameLast": "Aaron",
+      "nameGiven": "Henry Louis",
+      "weight": 180,
+      "height": 72,
+      "debut": "1954-04-13",
+      "finalGame": "1976-10-03",
+      "retroId": "aaroh101",
+      "bbrefId": "aaronha01",
+      "bats": "R",
+      "throws": "R"
+    }
+  ],
+  "totalElements": 4,
+  "totalPages": 2,
+  "currentPage": 1,
+  "limit": 3,
+  "currentPageSize": 1
+}

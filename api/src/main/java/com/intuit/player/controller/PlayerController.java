@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(path = "${apiPrefix}/players")
+@RequestMapping(path = "${apiPrefix:/api}/players")
 public class PlayerController {
     private final PlayerService playerService;
 
