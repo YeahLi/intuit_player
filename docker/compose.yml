@@ -16,8 +16,8 @@ services:
       timeout: 5s
       retries: 55
   player-rest:
-    image: 'player-rest:latest'
-    build: ../rest
+    image: 'liye198995/player-rest:latest'
+#    build: ../api
     ports:
       - 8888:8080
     depends_on:
