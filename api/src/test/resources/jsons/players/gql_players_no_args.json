@@ -1,0 +1,32 @@
+{
+  "players": [
+    {
+      "nameLast": "Aardsma",
+      "nameFirst": "David",
+      "nameGiven": "David Allan",
+      "finalGame": "2015-08-23"
+    },
+    {
+      "nameLast": "Aaron",
+      "nameFirst": "Hank",
+      "nameGiven": "Henry Louis",
+      "finalGame": "1976-10-03"
+    },
+    {
+      "nameLast": "Aaron",
+      "nameFirst": "Tommie",
+      "nameGiven": "Tommie Lee",
+      "finalGame": "1971-09-26"
+    },
+    {
+      "nameLast": "Aase",
+      "nameFirst": "Don",
+      "nameGiven": "Donald William",
+      "finalGame": "1990-10-03"
+    }
+  ],
+  "totalPages": 1,
+  "currentPage": 0,
+  "currentPageSize": 4,
+  "totalElements": 4
+}

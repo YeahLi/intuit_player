@@ -1,0 +1,45 @@
+type Query {
+    playerById(playerId: ID!): Player
+    players(limit:Int!=50, page:Int!=0, sortCols:[String], desc:Boolean): PlayerList
+}
+
+scalar DateTime
+scalar Long
+
+type Player {
+    id: ID!
+    birthYear: Int
+    birthMonth: Int
+    birthDay: Int
+    birthCountry: String
+    birthState: String
+    birthCity: String
+
+    deathYear: Int
+    deathMonth: Int
+    deathDay: Int
+    deathCountry: String
+    deathState: String
+    deathCity: String
+
+    nameFirst: String
+    nameLast: String
+    nameGiven: String
+    weight: Int
+    height: Int
+    batsHand: String
+    throwsHand: String
+    debut: String
+    finalGame: String
+    retroId: String
+    bbrefId: String
+}
+
+type PlayerList{
+    players: [Player]
+    totalElements: Long
+    totalPages: Int
+    currentPage: Int
+    limit: Int
+    currentPageSize: Int
+}

@@ -1,6 +1,9 @@
 spring:
   profiles:
     active: local
+  graphql:
+    graphiql.enabled: true
+    cors.allowed-origins: '*'
 
 #default api prefix
 apiPrefix: /api

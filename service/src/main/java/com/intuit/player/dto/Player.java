@@ -34,7 +34,7 @@ public class Player {
 
     private Integer deathDay;
 
-    private String deathCounty;
+    private String deathCountry;
 
     private String deathState;
 
@@ -76,7 +76,7 @@ public class Player {
             playerEntity.getDeathYear(),
             playerEntity.getDeathMonth(),
             playerEntity.getDeathDay(),
-            playerEntity.getDeathCounty(),
+            playerEntity.getDeathCountry(),
             playerEntity.getDeathState(),
             playerEntity.getDeathCity(),
             playerEntity.getNameFirst(),

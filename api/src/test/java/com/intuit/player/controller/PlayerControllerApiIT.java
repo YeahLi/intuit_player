@@ -21,9 +21,6 @@ class PlayerControllerApiIT {
     @Autowired
     private MockMvc mvc;
 
-    @Autowired
-    private PlayerController playerController;
-
     @Test
     void getPlayerById() throws Exception {
         String playerId = "aardsda01";

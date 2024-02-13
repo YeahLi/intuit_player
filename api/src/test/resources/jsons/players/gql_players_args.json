@@ -1,0 +1,14 @@
+{
+  "players": [
+    {
+      "nameLast": "Aaron",
+      "nameFirst": "Hank",
+      "nameGiven": "Henry Louis",
+      "finalGame": "1976-10-03"
+    }
+  ],
+  "totalPages": 2,
+  "currentPage": 1,
+  "currentPageSize": 1,
+  "totalElements": 4
+}

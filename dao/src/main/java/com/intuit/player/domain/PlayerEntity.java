@@ -65,7 +65,7 @@ public class PlayerEntity {
 
     @Column(name = "death_country")
     @Size(max = 100)
-    private String deathCounty;
+    private String deathCountry;
 
     @Column(name = "death_state")
     @Size(max = 100)
